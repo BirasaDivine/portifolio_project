@@ -10,13 +10,13 @@
 To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
-[divinecharlotte.github.io/portifolio-setup]( https://divinecharlotte.github.io/portifolio-setup/)
+[divineDivine.github.io/portifolio-setup]( https://divineDivine.github.io/portifolio-setup/)
 
 ### Setup 
 clone the project to ypour local environment.
 
 to clone it do as below
-git clone https://github.com/divinecharlotte/portifolio-setup.git
+git clone https://github.com/divineDivine/portifolio-setup.git
 
 ### Install
 you have run the installation commands.
@@ -29,7 +29,7 @@ use linters to check the errors in your html and style
 
 👤 **divine**
 
-- GitHub: [@githubhandle]( https://github.com/divinecharlotte)
+- GitHub: [@githubhandle]( https://github.com/divineDivine)
 
 ## 🤝 Contributing
 

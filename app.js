@@ -33,7 +33,7 @@ const projects = [
     description:
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,',
     technologyList: ['Html', 'Ruby on Rails', 'Javascript'],
-    liveLink: 'divinecharlotte.github.io/portifolio-setup',
+    liveLink: 'divineDivine.github.io/portifolio-setup',
   },
 
   {
@@ -102,17 +102,11 @@ const seeButtons = [];
 projects.forEach((project, index) => seeButtons.push(document.getElementById(`see-button-${index}`)));
 
 const mainContainer1 = document.getElementById('main-container1');
-const closeIcon2 = document.getElementById('closeIcon2');
-
 seeButtons.forEach((seeButton) => {
   seeButton.addEventListener('click', () => {
     mainContainer1.classList.add('show');
   });
 });
-closeIcon2.addEventListener('click', () => {
-  mainContainer1.classList.remove('show');
-});
-
 // FORM VALIDATION
 contactFormCont.addEventListener('submit', (event) => {
   const emailInput = contactFormCont.email.value;

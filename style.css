@@ -1,3 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
 @media only screen and (min-width: 320px) {
   body {
     margin: 0;
@@ -28,17 +36,8 @@
   .header-part {
     width: 100%;
     padding-bottom: 20px;
-    height: 40px;
     background-color: white;
     position: fixed;
-  }
-
-  .Charlotte {
-    margin: auto;
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
   }
 
   .header-part a {
@@ -65,12 +64,6 @@
     background-color: #4053fc;
   }
 
-  .fa-times {
-    color: white;
-    float: right;
-    font-size: 25px;
-    margin: 5%  10%;
-  }
 
   #closeIcon2 {
     color: black;
@@ -88,7 +81,6 @@
     align-items: center;
     background: white url(./images/header-shapesmobile.png);
     background-repeat: no-repeat;
-    height: 600px;
     width: 100%;
     border-bottom-left-radius: 50px;
     background-position: center;
@@ -116,6 +108,7 @@
 
   .social-icons1 {
     width: 90%;
+    height: 100px;
   }
 
   .social-icons {
@@ -260,13 +253,9 @@
     margin-left: 6px;
   }
 
-  .about:active {
-    background: red;
-  }
 
   .about-me h2 {
     font-size: 40px;
-    height: 90px;
     line-height: 52px;
   }
 
@@ -302,9 +291,6 @@
     height: 48px;
   }
 
-  .about2:active {
-    background: red;
-  }
 
   .lan {
     font-weight: 500;
@@ -549,7 +535,7 @@
     border-radius: 8px;
   }
 
-  .Charlotte {
+  .Divine {
     width: 80%;
     height: 40px;
     display: flex;
@@ -671,16 +657,13 @@
   }
 
   .heading {
-    width: 496px;
-    height: 46px;
     font-size: 40px;
     font-weight: 700;
-    line-height: 52px;
     color: #091e42;
+    z-index: 0;
   }
 
   .structure {
-    height: 8px;
     display: flex;
     gap: 12px;
     align-items: center;
@@ -771,7 +754,7 @@
 
   .abm {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 52px;
     color: #091e42;
   }
@@ -852,4 +835,43 @@
     color: #ebebff;
     font-family: "Poppins", sans-serif;
   }
+}
+
+
+.close {
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 10px;
+    height: 20px;
+    display: inline-block;
+}
+
+.close::before, .close::after {
+    content: '';
+    position: absolute;
+    top: 2%;
+    right: 10%;
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    transform-origin: center;
+}
+
+.close::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #ffffff;
+    z-index: 1000;
 }

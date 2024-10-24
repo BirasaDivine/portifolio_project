@@ -18,41 +18,41 @@ closeMenu.onclick = function hideMenu() {
 const projects = [
   {
     id: 'card1',
-    title: 'Tonic',
+    title: 'e-Miti Inventory Management System',
     image: './images/22.png',
     image1: './images/./SnapshootPortfolio(1).png',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,',
-    technologyList: ['Html', 'Ruby on Rails', 'Javascript'],
+    description: 'A pharmacy inventory management system built using Python and Urwid. It allows users to manage inventory items, user registrations, and authentication.',
+    technologyList: ['Python', 'MySQL'],
   },
 
   {
     id: 'card2',
-    title: 'Multi-Post Stories',
+    title: 'Grade Book App',
     image: './images/21.png',
     image1: './images/SnapshootPortfolio(2).png',
     description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,',
-    technologyList: ['Html', 'Ruby on Rails', 'Javascript'],
+        'A grade book app that allows teachers to manage students, subjects, and grades. It also allows students to view their grades and average scores.',
+    technologyList: ['Python'],
     liveLink: 'divineDivine.github.io/portifolio-setup',
   },
 
   {
     id: 'card3',
-    title: 'Facebook 360',
+    title: 'Registration Sytem',
     image: './images/23.png',
     image1: './images/SnapshootPortfolio(3).png',
     description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,',
-    technologyList: ['Html', 'Ruby on Rails', 'Javascript'],
+        'A registration system that allows users to register for an event. It also allows users to view the list of registered users and their details.',
+    technologyList: ['Bashscript'],
   },
   {
     id: 'card4',
-    title: 'Uber Navigation',
+    title: 'Personal Portfolio',
     image: './images/tonic.jpg',
     image1: './images/SnapshootPortfolio.png',
     description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,',
-    technologyList: ['Html', 'Ruby on Rails', 'Javascript'],
+        'This my personal portfolio website. It showcases my projects, skills, and contact information.',
+    technologyList: ['Html', 'css', 'Javascript'],
   },
 ];
 
@@ -71,11 +71,11 @@ projects.forEach((project, index) => {
         <div>
           <h2 class="heading">${project.title}</h2>
           <div class="structure">
-            <span class="canopy">CANOPY</span>
+            <span class="canopy">ALU</span>
             <img src="./images/./counter.png" alt="counter" />
-            <span class="transpalent">Back End Dev</span>
+            <span class="transpalent">Front End Dev</span>
             <img src="./images/./counter.png" alt="counter" />
-            <span class="transpalent">2015</span>
+            <span class="transpalent">2024</span>
           </div>
         </div>
         <div class="box-content">

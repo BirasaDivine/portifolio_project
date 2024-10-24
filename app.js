@@ -14,7 +14,7 @@ closeMenu.onclick = function hideMenu() {
   navLinks.style.right = '-100%';
 };
 
-// workks part popup
+
 const projects = [
   {
     id: 'card1',

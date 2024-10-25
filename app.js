@@ -23,6 +23,8 @@ const projects = [
     image1: './images/./SnapshootPortfolio(1).png',
     description: 'A pharmacy inventory management system built using Python and Urwid. It allows users to manage inventory items, user registrations, and authentication.',
     technologyList: ['Python', 'MySQL'],
+    liveLink: 'https://github.com/Bonaparte003/e-Miti_Inventory_Management_System_Negpod-12',
+    seeSource: 'https://github.com/Bonaparte003/e-Miti_Inventory_Management_System_Negpod-12',
   },
 
   {
@@ -33,7 +35,8 @@ const projects = [
     description:
         'A grade book app that allows teachers to manage students, subjects, and grades. It also allows students to view their grades and average scores.',
     technologyList: ['Python'],
-    liveLink: 'divineDivine.github.io/portifolio-setup',
+    liveLink: 'https://github.com/BirasaDivine/grade-book-app_BirasaDivine',
+    seeSource: 'https://github.com/BirasaDivine/grade-book-app_BirasaDivine',
   },
 
   {
@@ -44,6 +47,8 @@ const projects = [
     description:
         'A registration system that allows users to register for an event. It also allows users to view the list of registered users and their details.',
     technologyList: ['Bashscript'],
+    liveLink: 'https://github.com/Bonaparte003/GSCS-Registration_System',
+    seeSource: 'https://github.com/Bonaparte003/GSCS-Registration_System',
   },
   {
     id: 'card4',
@@ -53,6 +58,9 @@ const projects = [
     description:
         'This my personal portfolio website. It showcases my projects, skills, and contact information.',
     technologyList: ['Html', 'css', 'Javascript'],
+    liveLink: 'https://birasadivine.github.io/portifolio_project/',
+    seeSource: 'https://github.com/BirasaDivine/portifolio_project',
+    
   },
 ];
 
@@ -86,9 +94,9 @@ projects.forEach((project, index) => {
         </div>
         <div>
           <ul class="flex-container">
-            <li>${project.technologyList[0]}</li>
-            <li>${project.technologyList[1]}</li>
-            <li>${project.technologyList[2]}</li>
+           ${ project.technologyList[0] ? `<li>${project.technologyList[0]}</li>`:""}
+           ${ project.technologyList[1] ? `<li>${project.technologyList[1]}</li>`:""}
+           ${ project.technologyList[2] ? `<li>${project.technologyList[2]}</li>`:""}
           </ul>
         </div>
         <div><a><button type="button" class="about" id ="see-button-${index}" >see project</button></a></div>
@@ -103,7 +111,57 @@ projects.forEach((project, index) => seeButtons.push(document.getElementById(`se
 
 const mainContainer1 = document.getElementById('main-container1');
 seeButtons.forEach((seeButton) => {
+  console.log(seeButton);
+  let number = seeButton.id.match(/\d+/)[0];
   seeButton.addEventListener('click', () => {
+    mainContainer1.innerHTML = `
+    <div class="pop">
+        <h2 class="heading">${projects[number].title}</h2>
+        <div class="structure">
+          <span class="canopy">ALU</span>
+          <span class="transpalent">Front End Dev</span>
+          <span class="transpalent">2024</span>
+        </div>
+        <div class="part1">
+          <img
+            class="picture"
+            src="${projects[number].image}"
+            alt="image"
+          />
+          <img class="pict"  src="${projects[number].image}" alt="image" />
+        </div>
+        <div class="part2">
+          <div class="part222">
+          
+              <div>
+                 <ul class="flex-container">
+           ${ projects[number].technologyList[0] ? `<li>${projects[number].technologyList[0]}</li>`:""}
+           ${ projects[number].technologyList[1] ? `<li>${projects[number].technologyList[1]}</li>`:""}
+           ${ projects[number].technologyList[2] ? `<li>${projects[number].technologyList[2]}</li>`:""}
+          </ul>
+                </ul>
+              <div class="check">
+                <a href="${ projects[number].liveLink }" target="_blank" rel="noopener noreferrer" >
+                <div  class="popup-link">
+                  <span>See live</span>
+                  
+                  <img src="./images/Icon.png" alt="" />
+                </div>
+              </a>
+
+                <a href="${projects[number].seeSource}" target="_blank" rel="noopener noreferrer"> 
+                <div class="popup-link" >
+                  <span>see-source</span>
+                  
+                  <img src="./images/Group.png" alt="" />
+                </div>
+              </a>
+            </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    `;
     mainContainer1.classList.add('show');
   });
 });

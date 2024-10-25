@@ -17,7 +17,7 @@ use linters to check the errors in your html and style
 
 👤 **divine**
 
-- GitHub: [@githubhandle]( https://github.com/divineDivine)
+- GitHub: [@githubhandle]( https://github.com/BirasaDivine)
 
 
 ## Show your support

@@ -6,11 +6,7 @@
 
 - html
 - css
-- -Javascript
-
-
-### Usage 
-use linters to check the errors in your html and style 
+- Javascript
 
 
 ## Authors

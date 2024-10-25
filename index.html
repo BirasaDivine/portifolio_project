@@ -6,32 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Birasa Divine's Portfolio</title>
   
-    <!-- Stylesheet -->
-
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Icons Script -->
+    <!-- Icons Script (if needed in future) -->
   </head>
 
   <body>
+    <!-- Header section with navigation links -->
     <header class="header-part">
       <div class="Divine">
         <a href="#">Birasa Divine</a>
+        <!-- Navigation links for Portfolio, About, and Contact -->
         <ul class="informations">
           <li class="info"><a href="#">Portfolio</a></li>
           <li class="info"><a href="#about">About</a></li>
           <li class="info"><a href="#contact">Contact</a></li>
         </ul>
       </div>
+      
+      <!-- Mobile menu icon -->
       <div class="burger" id="burger">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
       </div>
+      
+      <!-- Mobile navigation menu -->
       <div class="nav-links" id="navLinks">
         <div id="closeIcon">
           <span class="close"></span>
         </div>
+        <!-- Links for mobile view -->
         <ul class="informations-mb" id="navItems">
           <li class="infom"><a href="#">Portfolio</a></li>
           <li class="infom"><a href="#about">About</a></li>
@@ -39,25 +45,30 @@
         </ul>
       </div>
     </header>
+
+    <!-- Introduction section with a headline -->
     <section class="headline-part">
       <h1>
         I’m Divine, <br />
         Glad to see you!
       </h1>
       <p>
-        I’m a software developer.Welcome to my Portifolio website!
+        I’m a software developer. Welcome to my Portfolio website!
       </p>
 
+      <!-- Call to action: link to LinkedIn profile -->
       <p class="connect"><a href="https://www.linkedin.com/in/birasa-laura-divine-a1397b257/">LET'S CONNECT</a></p>
     </section>
 
-    <div class="main-container1" id="main-container1">
-      
-    </div>
+    <!-- Placeholder for main content -->
+    <div class="main-container1" id="main-container1"></div>
 
+    <!-- Portfolio section -->
     <section id="portfolio" class="box">
-<h6 class="tit">tonic</h6>
+      <h6 class="tit">tonic</h6>
     </section>
+
+    <!-- About me section -->
     <section class="about-me" id="about">
       <div class="me">
         <div class="part1ml">
@@ -67,36 +78,46 @@
           </h2>
 
           <p class="text">
-            Hello I'm a software developer! Look through some of my work and experience! If
+            Hello, I'm a software developer! Look through some of my work and experience! If
             you like what you see and have a project you need coded, don’t
-            hestiate to contact me.
+            hesitate to contact me.
           </p>
 
+          <!-- Call to action to connect -->
           <p class="connect"><a href="#">LET'S CONNECT</a></p>
           <div class="social-icons">
             <ul>
+              <!-- Social media icons -->
               <li>
                 <a
-                  href="https://www.linkedin.com/in/birasa-laura-divine-a1397b257/"
-                  ><img src="./images/./Linkedinicon.png" alt="linkedin-icon" />
+                  href="https://www.linkedin.com/in/birasa-laura-divine-a1397b257/">
+                  <img src="./images/./Linkedinicon.png" alt="linkedin-icon" />
                 </a>
               </li>
               <li>
-                <a href="https://github.com/divineDivine"
-                  ><img src="./images/./github.png" alt="github-icon"
-                /></a>
+                <a href="https://github.com/divineDivine">
+                  <img src="./images/./github.png" alt="github-icon" />
+                </a>
               </li>
             </ul>
           </div>
-          <p><button type="button" class="about2"><a href="./docs/Divine's cv.pdf.pdf" download="">Get my resume</a></button></p>
+
+          <!-- Button to download resume -->
+          <p>
+            <button type="button" class="about2">
+              <a href="./docs/Divine's cv.pdf.pdf" download="">Get my resume</a>
+            </button>
+          </p>
         </div>
 
+        <!-- Skills and Languages section -->
         <ul class="languages">
           <li class="arrow1">
             <div class="arrow">
               <h3 class="lan">Languages</h3>
             </div>
 
+            <!-- Language icons for desktop and mobile -->
             <div class="dsk">
               <img src="./images/./Frame1copy.png" alt="html-framework" />
               <img src="./images/./Frame9.png" alt="javascript-language" />
@@ -110,44 +131,35 @@
             </div>
           </li>
 
+          <!-- Additional sections for Frameworks and Skills -->
           <li class="arrow">
-            <h3 class="lan">frameworks</h3>
+            <h3 class="lan">Frameworks</h3>
           </li>
           <li>
-            <img
-              class="separator"
-              src="./images/./SeparatorBottom.png"
-              alt=""
-            />
+            <img class="separator" src="./images/./SeparatorBottom.png" alt="" />
           </li>
           <li class="arrow">
             <h3 class="lan">Skills</h3>
           </li>
-
           <li>
-            <img
-              class="separator"
-              src="./images/./SeparatorBottom.png"
-              alt=""
-            />
+            <img class="separator" src="./images/./SeparatorBottom.png" alt="" />
           </li>
         </ul>
       </div>
     </section>
+
+    <!-- Footer / Contact section -->
     <footer class="foot" id="contact">
       <div class="foot-again">
         <h2 class="contact">Contact me</h2>
         <p>
           If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it
+          that you need built or a project that needs coding, I’d love to help
+          with it.
         </p>
 
-        <form
-          class="forma"
-          method="post"
-          id="formcontact"
-        >
+        <!-- Contact form -->
+        <form class="forma" method="post" id="formcontact">
           <input
             type="text"
             placeholder="Enter your name"
@@ -174,11 +186,13 @@
           ></textarea>
           <small></small>
           <div class="get">
-            <input type="submit" value="Get It Touch" />
+            <input type="submit" value="Get In Touch" />
           </div>
         </form>
       </div>
     </footer>
+    
+    <!-- Link to external JavaScript file -->
     <script src="app.js"></script>
   </body>
 </html>

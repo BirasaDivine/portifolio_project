@@ -1,8 +1,10 @@
+//Get references to the DOM elements
 const navLinks = document.getElementById('navLinks');
 const burger = document.getElementById('burger');
 const hideMenu = document.getElementById('closeIcon');
 const closeMenu = document.getElementById('navItems');
 const contactFormCont = document.getElementById('formcontact');
+//show and hide the navigation menu
 burger.onclick = function burger() {
   navLinks.style.right = '0';
 };
@@ -14,7 +16,7 @@ closeMenu.onclick = function hideMenu() {
   navLinks.style.right = '-100%';
 };
 
-
+//Arrays of objects for the projects
 const projects = [
   {
     id: 'card1',
@@ -63,7 +65,7 @@ const projects = [
     
   },
 ];
-
+//Loop through the projects array and display the projects on the portfolio section
 const section = document.getElementById('portfolio');
 projects.forEach((project, index) => {
   const div = document.createElement('div');
@@ -105,7 +107,7 @@ projects.forEach((project, index) => {
     `;
   section.appendChild(div);
 });
-
+//Get all the see project buttons
 const seeButtons = [];
 projects.forEach((project, index) => seeButtons.push(document.getElementById(`see-button-${index}`)));
 

@@ -15,6 +15,15 @@ hideMenu.onclick = function hideMenu() {
 closeMenu.onclick = function hideMenu() {
   navLinks.style.right = '-100%';
 };
+// Function to toggle the visibility of the education section
+function toggleEducation() {
+  const educationSection = document.getElementById('education');
+  if (educationSection.style.display === "none") {
+      educationSection.style.display = "block"; // Show the section
+  } else {
+      educationSection.style.display = "none"; // Hide the section
+  }
+}
 
 //Arrays of objects for the projects
 const projects = [

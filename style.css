@@ -241,7 +241,8 @@ li {
   gap: 1rem;
   justify-content: flex-start;
   list-style: none;
-  padding-left: 14px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .about {
@@ -258,7 +259,6 @@ li {
   text-align: center;
   width: 124px;
   height: 48px;
-  margin-left: 6px;
 }
 
 
@@ -703,7 +703,8 @@ body {
 
 .about {
   width: 120px;
-  height: 48px;
+  height: 50px;
+  padding-left: 0;
   border-radius: 8px;
   border: 2px solid #4053fc;
   cursor: pointer;

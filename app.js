@@ -64,7 +64,7 @@ const projects = [
   {
     id: 'card4',
     title: 'Personal Portfolio',
-    image: './images/tonic.jpg',
+    image: './images/tonic.png',
     image1: './images/SnapshootPortfolio.png',
     description:
         'This my personal portfolio website. It showcases my projects, skills, and contact information.',
@@ -118,15 +118,22 @@ projects.forEach((project, index) => {
 });
 //Get all the see project buttons
 const seeButtons = [];
+
+
 projects.forEach((project, index) => seeButtons.push(document.getElementById(`see-button-${index}`)));
 
 const mainContainer1 = document.getElementById('main-container1');
+const closeMainContainer = () => {
+  mainContainer1.innerHTML = '';
+  mainContainer1.classList.remove('show');
+}
+
 seeButtons.forEach((seeButton) => {
-  console.log(seeButton);
   let number = seeButton.id.match(/\d+/)[0];
   seeButton.addEventListener('click', () => {
     mainContainer1.innerHTML = `
     <div class="pop">
+    <button class="closeMainContainer" id="closeMainContainer" onclick="closeMainContainer()">X</button>
         <h2 class="heading">${projects[number].title}</h2>
         <div class="structure">
           <span class="canopy">ALU</span>
